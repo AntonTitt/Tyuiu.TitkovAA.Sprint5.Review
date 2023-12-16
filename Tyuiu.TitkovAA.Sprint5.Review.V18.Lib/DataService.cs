@@ -22,14 +22,11 @@ namespace Tyuiu.TitkovAA.Sprint5.Review.V18.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                /*
-                char v= ' ';
-                bool fl = false;
-                */
+                
 
                 line = reader.ReadLine();
-                //while ((line = reader.ReadLine()) != null)
-                //{
+                
+
 
                     strLine += line.Replace("н", "нн");
 
@@ -38,7 +35,7 @@ namespace Tyuiu.TitkovAA.Sprint5.Review.V18.Lib
 
                     File.AppendAllText(pathSavedFile, strLine );
                     strLine = "";
-                //}
+                 
             }
             return pathSavedFile;
         }

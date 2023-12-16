@@ -45,6 +45,7 @@ namespace Tyuiu.TitkovAA.Sprint5.Review.V18
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("В файле: " + path);
+
             Console.WriteLine(dt.LoadDataAndSave(path));
 
         }
